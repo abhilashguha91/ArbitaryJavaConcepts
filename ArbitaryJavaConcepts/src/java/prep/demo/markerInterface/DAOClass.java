@@ -1,4 +1,4 @@
-package java.prep.demo;
+package java.prep.demo.markerInterface;
 
 public class DAOClass {
 	
