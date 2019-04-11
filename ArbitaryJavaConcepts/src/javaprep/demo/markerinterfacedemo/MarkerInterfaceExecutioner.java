@@ -1,4 +1,6 @@
-package java.prep.demo.markerInterface;
+package javaprep.demo.markerinterfacedemo;
+
+import javaprep.demo.markerinterfacedemo.exception.InvalidBusinessObjectException;
 
 public class MarkerInterfaceExecutioner {
 
@@ -8,12 +10,12 @@ public class MarkerInterfaceExecutioner {
 	
 	public static void main(String[] args) {
 		
-		DAOClass dao = new DAOClass();
-		BusinessService service = new BusinessService();
+		BusinessService businessService = new BusinessService();
+		BusinessObject obj = new BusinessObject();
 		
 		try {
-			dao.saveBusinessTransaction(service);
-		} catch (Exception e) {
+			businessService.businessService(obj);
+		} catch (InvalidBusinessObjectException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
